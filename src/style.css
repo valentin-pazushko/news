@@ -1,22 +1,15 @@
 body {
-  color: #e1e1e1;
-  background-color: #e1e1e1;
   font-family: 'Audiowide', 'Arial Narrow Bold', fantasy;
   box-sizing: border-box;
 }
 
 .app__header {
-  text-align: center;
   padding: 10px;
 }
 
 .app__header-text {
   font-size: 50px;
   font-weight: normal;
-  text-shadow: 1px 1px 0 black,
-  1px -1px 0 black,
-  -1px 1px 0 black,
-  -1px -1px 0 black;
 }
 
 .app__main {
@@ -34,10 +27,16 @@ body {
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
-  height: 140px;
+  height: 80px;
   overflow: auto;
   align-items: center;
   font: 300 1em "Audiowide", sans-serif;
+}
+
+.app_search-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .app__main-sources::-webkit-scrollbar-track {
@@ -66,36 +65,23 @@ body {
   background-color: #ffffff;
   cursor: pointer;
   white-space: nowrap;
-  text-shadow: rgba(255, 255, 255, .5) 1px 1px, rgba(100, 100, 100, .3) 3px 5px 3px;
-  padding: 1em 1em;
-  border-radius: 10px;
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, .0) 30%, rgba(255, 255, 255, .8), rgba(255, 255, 255, .0) 70%),
-  linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, .3)),
-  linear-gradient(to right, rgba(125, 125, 125, 1), rgba(255, 255, 255, .9) 45%, rgba(125, 125, 125, .5)),
-  linear-gradient(to right, rgba(125, 125, 125, 1), rgba(255, 255, 255, .9) 45%, rgba(125, 125, 125, .5)),
-  linear-gradient(to right, rgba(223, 190, 170, 1), rgba(255, 255, 255, .9) 45%, rgba(223, 190, 170, .5)),
-  linear-gradient(to right, rgba(223, 190, 170, 1), rgba(255, 255, 255, .9) 45%, rgba(223, 190, 170, .5));
-  background-repeat: no-repeat;
-  background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
-  background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
-  box-shadow: rgba(0, 0, 0, .5) 1px 5px 5px -5px;
-  margin: 10em, 10em;
-}
-
-.app__btn:hover {
-  transition: .5s linear;
-  background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+  padding: 10px;
+  margin: 0 5px;
+  border-width: 1px;
+  border-color: black;
 }
 
 .btn__filter {
   padding: 15px 25px;
-  margin-left: 20px;
+  margin-left: 0;
+  background-color: #00ff0033;
   /*background-color: rgb(253, 196, 196);*/
   /*color: black;*/
 }
 
 .app__main-search {
-  margin: 50px;
+  margin: 10px;
+  display: flex;
 }
 
 .app__footer {
@@ -117,13 +103,12 @@ body {
 
 .app__main-news {
   max-width: 900px;
-  margin: 10px auto;
 }
 
 .news__item {
   display: block;
   border: 4px solid white;
-  margin: 50px;
+  margin: 50px 10px;
   color: #000000;
 }
 
@@ -165,7 +150,7 @@ body {
 .news__link {
   text-decoration: none;
   color: rgba(175, 81, 53, 0.705);
-  margin: 10px;
+  margin: 20px;
 }
 
 @media only screen and (min-width: 641px) {

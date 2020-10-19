@@ -70,7 +70,7 @@ function createBlock(newsCount, data){
 
 function loadBy(urlPart){
   hide('#error-block');
-  const url = 'https://newsapi.org/v2/' + urlPart + 'apiKey=f06f3b9ba8684ab8b249a410771bdf8f';
+  const url = 'https://newsapi.org/v2/' + urlPart + 'apiKey=25273fe4e7684ed79910bf9d82ff2318';
   const request = new Request(url);
   fetch(request)
     .then(function(response) { return response.json(); })

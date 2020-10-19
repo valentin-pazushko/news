@@ -11,7 +11,7 @@
     "check": "./node_modules/.bin/eslint",
     "fix": "./node_modules/.bin/eslint --fix"
   },
-  "author": "Predkel",
+  "author": "Pazushko",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.4.4",

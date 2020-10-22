@@ -22,6 +22,8 @@ document.querySelector('#filter-btn').addEventListener('click', () => {
   const query = document.querySelector('#search-field').value;
   if(query.length > 0){
     loadBy(`everything?q=${query}&pageSize=5&page=1&`);
+  }else{
+    loadBy('top-headlines?country=ru&pageSize=5&page=1&');
   }
 });
 
